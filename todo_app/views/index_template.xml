@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <template id = "index_template" name = "My Todo List">
+              <div id = "wrap" class = "container">
+                  <h1>Todo Tasks </h1>
+                  <t t-foreach = "tasks" t-as = "task">
+                      <div class = "row">
+                          <span t-field = "task.name"/>
+                          <span t-field = "task.user_id"/>
+                      </div>
+                        <div class="column">
+                            <span t-field="task.active"/>
+                        </div>
+                  </t>
+              </div>
+    </template>
+</odoo>

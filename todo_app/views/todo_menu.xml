@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<odoo>
+    <!-- Action to Open To-do Task List -->
+    <act_window id = "action_todo_task"
+        name = "To-do Task"
+        res_model = "todo.task"
+        view_mode = "tree,form"
+    />
+
+    <!-- Menu Item to Open TO-do Task List -->
+    <menuitem id = "menu_todo_task"
+              name = "Todos"
+              action = "action_todo_task"
+    />
+
+</odoo>
